@@ -10,7 +10,30 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^1.4.1",
+    "progress": "^1.1.8",
+    "request": "^2.60.0",
     "slackbots": "^0.5.3",
     "sqlite3": "^3.1.8"
+  },
+  "bin": {
+    "norrisbot": "bin/bot.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "xo": "^0.5.2"
+  },
+  "xo": {
+    "space": 4,
+    "rules": {
+      "camelcase": [
+        2,
+        {
+          "properties": "never"
+        }
+      ]
+    }
   }
 }
